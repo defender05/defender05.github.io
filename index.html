@@ -12,22 +12,25 @@
         <div class="inner">
 
             <form id="task_form">
-                <label>Тип поста </label>
+                <label>Тип поста </label><br>
                 <select name="post_type" id="post_type" autocomplete="">
                     <option value="everyday">Ежедневно</option>
                     <option value="custom">Свой список</option>
-                </select>
+                </select><br>
 
-                <label>Дата публикации </label>
-                <input type="date" name="task_date">
+                <label>Дата публикации </label><br>
+                <input type="date" name="task_date"><br>
 
-                <label>Время публикации </label>
-                <input type="time" name="task_time">
+                <label>Время публикации </label><br>
+                <input type="time" name="task_time"><br>
 
-                <label>Канал </label>
-                <input type="text" name="task_channel">
+                <label>Канал </label><br>
+                <select name="channel_list" id="channel_list" autocomplete="">
+                    <option value="item1">item1</option>
+                    <option value="item2">item2</option>
+                </select><br>
 
-                <input type="button" id="submit_btn">Создать задачу</button>
+                <input type="button" value="Создать задачу" id="submit_btn">
             </form>
 
         </div>

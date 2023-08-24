@@ -10,8 +10,6 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-size: 18px;
     color: var(--tg-theme-text-color);
     background: var(--tg-theme-bg-color);
@@ -23,24 +21,27 @@ body {
 }
 
 .inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px 200px;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px 200px; */
 }
 
-.img {
-    text-align: center;
-}
-.container .inner form select{
-    padding: 5px 5px 5px 5px;
+/* .container .inner form label{
+    
+} */
+.container .inner form input, select{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
     border-radius: 5px;
     border: 1px solid #b8b8b8;
     transition: all 0.3s ease;
 }
-.container .inner form select:hover{
+.container .inner form input:hover, select:hover{
     border: 1px solid #259dff;
 }
-.container .inner form button {
+.container .inner form #submit_btn{
     display: inline-block;
     padding: 10px 20px;
     margin: 20px 0 20px 0;
@@ -52,6 +53,6 @@ body {
     font-weight: 700;
     transition: all 0.3s ease;
 }
-.container .inner form button:hover {
+.container .inner form #submit_btn:hover {
     background: #157acc;
 }
