@@ -7,15 +7,16 @@ tg.MainButton.color = '#2cab37';
 
 let item = "";
 
-let btn1 = document.getElementById("btn1");
+let task_form = document.getElementById("task_form");
+let submit_btn = document.getElementById("submit_btn");
 
-btn1.addEventListener("click", function(){
+submit_btn.addEventListener("click", function(){
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар 1!");
-		item = "1";
+		tg.MainButton.setText("Данные формы сохранены");
+		item = task_form.data;
 		tg.MainButton.show();
 	}
 });

@@ -11,14 +11,23 @@
     <div class="container">
         <div class="inner">
 
-            <form action="submit">
-                <label for="post_type">Тип поста </label>
+            <form id="task_form">
+                <label>Тип поста </label>
                 <select name="post_type" id="post_type" autocomplete="">
                     <option value="everyday">Ежедневно</option>
                     <option value="custom">Свой список</option>
                 </select>
 
-                <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Создать задачу</button>
+                <label>Дата публикации </label>
+                <input type="date" name="task_date">
+
+                <label>Время публикации </label>
+                <input type="time" name="task_time">
+
+                <label>Канал </label>
+                <input type="text" name="task_channel">
+
+                <input type="button" id="submit_btn">Создать задачу</button>
             </form>
 
         </div>
