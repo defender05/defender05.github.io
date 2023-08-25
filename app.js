@@ -8,6 +8,7 @@ tg.MainButton.color = '#2cab37';
 let item = "";
 
 let task_form = document.getElementById("task_form");
+let post_type = document.getElementById("post_type");
 let submit_btn = document.getElementById("submit_btn");
 
 submit_btn.addEventListener("click", function(){
@@ -16,7 +17,7 @@ submit_btn.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText("Данные формы сохранены");
-		item = task_form.data;
+		item = post_type.value;
 		tg.MainButton.show();
 	}
 });
