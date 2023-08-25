@@ -23,7 +23,7 @@ submit_btn.addEventListener("click", function(){
 		data_string = "";
 		form_data = [post_type.value, task_date.value, task_time.value, channel_list.value];
 		form_data.array.forEach(element => {
-			data_string += element.toString();
+			data_string += element.toString() + "\n";
 		});
 		output_data = data_string;
 		tg.MainButton.show();
