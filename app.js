@@ -16,7 +16,7 @@ submit_btn.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText("Данные формы сохранены");
-		item = task_form.data;
+		item = "task_form.data;"
 		tg.MainButton.show();
 	}
 });
