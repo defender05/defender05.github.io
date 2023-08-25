@@ -20,8 +20,12 @@ submit_btn.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText("Данные формы сохранены");
+		data_string = ""
 		form_data = [post_type.value, task_date.value, task_time.value, channel_list.value]
-		output_data = form_data;
+		form_data.array.forEach(element => {
+			data_string += element
+		});
+		output_data = data_string;
 		tg.MainButton.show();
 	}
 });
