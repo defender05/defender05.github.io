@@ -5,10 +5,13 @@ tg.expand();
 tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
-let item = "";
+let output_data = "";
 
-let task_form = document.getElementById("task_form");
 let post_type = document.getElementById("post_type");
+let task_date = document.getElementById("task_date");
+let task_time = document.getElementById("task_time");
+let channel_list = document.getElementById("channel_list");
+
 let submit_btn = document.getElementById("submit_btn");
 
 submit_btn.addEventListener("click", function(){
@@ -17,14 +20,15 @@ submit_btn.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText("Данные формы сохранены");
-		item = post_type.value;
+		form_data = [post_type.value, task_date.value, task_time.value, channel_list.value]
+		output_data = form_data;
 		tg.MainButton.show();
 	}
 });
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.sendData(item);
+	tg.sendData(output_data);
 });
 
 
