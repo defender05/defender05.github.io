@@ -25,7 +25,7 @@ submit_btn.addEventListener("click", function(){
 		// form_data.array.forEach(element => {
 		// 	data_string += element.toString() + "\n";
 		// });
-		output_data = "form_data";
+		output_data = JSON.stringify(form_data);
 		tg.MainButton.show();
 	}
 });
