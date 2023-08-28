@@ -5,7 +5,7 @@ tg.expand();
 tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
-let output_data = "";
+let output_data = [];
 
 let post_type = document.getElementById("post_type");
 let task_date = document.getElementById("task_date");
@@ -21,11 +21,11 @@ submit_btn.addEventListener("click", function(){
 	else {
 		tg.MainButton.setText("Данные формы сохранены");
 		// data_string = "";
-		// form_data = [post_type.value, task_date.value, task_time.value, channel_list.value];
+		form_data = [post_type.value, task_date.value, task_time.value, channel_list.value];
 		// form_data.array.forEach(element => {
 		// 	data_string += element.toString() + "\n";
 		// });
-		output_data = post_type.value;
+		output_data = form_data;
 		tg.MainButton.show();
 	}
 });
