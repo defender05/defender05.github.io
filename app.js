@@ -5,7 +5,7 @@ tg.expand();
 tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
-let output_data = [];
+var output_data = [];
 
 let post_type = document.getElementById("post_type");
 let task_date = document.getElementById("task_date");
